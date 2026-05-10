@@ -1,0 +1,189 @@
+<!-- 
+    Created by Michael Jinks Abuashia
+    May 2026
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css Link-->
+    <link
+      href="./css/output.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome Link-->
+    <link 
+      rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" 
+    />
+    <title>Nexus - Build your digital future</title>
+</head>
+<body>
+    <header>
+        <nav class="sticky w-full top-0 z-100 p-6 shadow-md bg-darkblue border-b-2 border-lightblue/30">
+            <div class="container mx-auto max-w-360 flex items-center justify-between">
+                <div>
+                    <a class="flex items-center gap-x-4" href="#"><img class="size-10 shrink-0 rounded-2xl" src="./assets/logo.png" alt="Nexus Logo">
+                    <h1 class="font-bold text-2xl text-white">NEXUS</h1></a>
+                </div>
+
+                <!-- Desktop nav -->
+                <div id="menu" class="text-gray-300 text-xl font-semibold ">
+                    <ul class="hidden md:flex justify-center space-x-12">
+                        <li><a 
+                            class="hover:border-b-4 hover:border-lightblue hover:text-white " 
+                            href="#home">Home</a></li>
+                        <li><a 
+                            class="hover:border-b-4 hover:border-lightblue hover:text-white" href="#services">Services</a></li>
+                        <li><a 
+                            class="hover:border-b-4 hover:border-lightblue hover:text-white"
+                            href="#about">About</a></li>
+                        <li><a 
+                            class="hover:border-b-4 hover:border-lightblue hover:text-white"
+                            href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="flex gap-4">
+                    <div>
+                        <button id="get-started" class="bg-lightblue text-xl text-white h-12 w-50 rounded-lg hover:text-sky-500 hover:font-bold hover:bg-white hover:border-transparent active:bg-purple active:text-white"><a href="#">Get Started</a></button>
+                    </div>
+
+                    <!-- Hamburger menu shown only on mobile  -->
+                    <div>
+                        <i class="fas fa-bars text-white md:hidden"></i>
+                    </div>
+
+                    <!-- Mobile Navlinks -->
+                    <div id="mobile-menu" class=" p-4 hidden md:hidden">
+                        <ul class="flex flex-col space-y-3 ">
+                            <li><a 
+                                class="hover:border-b-4 hover:border-lightblue hover:text-white" 
+                                href="#home">mHome</a></li>
+                            <li><a 
+                                class="hover:border-b-4 hover:border-lightblue hover:text-white" href="#services">Services</a></li>
+                            <li><a 
+                                class="hover:border-b-4 hover:border-lightblue hover:text-white"
+                                href="#about">About</a></li>
+                            <li><a 
+                                class="hover:border-b-4 hover:border-lightblue hover:text-white"
+                                href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <!-- Hero section -->
+        <section id="home" class="bg-darkblue h-screen w-full flex justify-center items-center">
+            <div class="container mx-auto max-w-360 grid grid-cols-1 md:grid-cols-2 gap-15">
+                <div class="flex flex-col justify-center align-middle space-y-12  ">
+                    <div class="font-bold text-white text-7xl flex">
+                        <h1>Build Your <span class="text-lightblue">Digital</span> Future</h1>
+                    </div> 
+                    <div class="text-gray-300 font-normal text-[35px]">
+                        <p>Transform your business with cutting-edge solutions that drive growth and innovation in the digital landscape</p>
+                    </div>
+                    <div class="flex space-x-6 h-20 font-semibold text-2xl">
+                        <button class="text-white bg-lightblue rounded-lg w-70"><a href="#">Start Your Journey</a></button>
+                        <button class="text-white rounded-lg border-2 border-gray-500 w-50"><a href="#">Learn More</a></button>
+                    </div>
+                </div>
+                <div>
+                    <img class="aspect-3/2 object-cover h-130 rounded-2xl" src="./assets/hero-image.png" alt="hero-image showing a laptop">
+                </div>
+            </div>
+        </section>
+
+        <!-- Services section -->
+        <section id="services" class="bg-blueshade h-screen w-full">
+            <div class="container pt-25 mx-auto max-w-360 ">
+                <div class="flex flex-col items-center">
+                    <h2 class="font-bold text-5xl text-white">Our Services</h2>
+                    <p class="text-[1.7rem] text-gray-300 max-w-210 pt-9 text-center">We provide comprehensive solutions to help your business thrive in the digital age</p>
+                </div>
+                <div class="grid grid-cols-1 pt-21 md:grid-cols-3 gap-10 place-content-center">
+                    <div class="bg-gray-800 p-10 pt-15 border-2 border-gray-700 rounded-2xl">
+                        <i class="fas fa-code bg-lightblue text-white rounded-xl p-6"></i>
+                        <h4 class="text-white text-2xl font-bold pt-14 pb-5">Web Development</h4>
+                        <p class=" font-normal text-2xl text-gray-300">Custom website and web applications built with modern technologies for optimal performance.</p>
+                    </div>
+                    <div class="bg-gray-800 p-10 pt-15 border-2 border-gray-700 rounded-2xl">
+                        <i class="fas fa-phone bg-green text-white rounded-xl p-6"></i></i>
+                        <h4 class="text-white text-2xl font-bold pt-14 pb-5">Mobile Apps</h4>
+                        <p class=" font-normal text-2xl text-gray-300">Native and cross-platform mobile applications that deliver exceptional user experiences.</p>
+                    </div>
+                    <div class="bg-gray-800 p-10 pt-15 border-2 border-gray-700 rounded-2xl">
+                        <i class="fas fa-graph bg-purple text-white rounded-xl p-6"></i></i>
+                        <h4 class="text-white text-2xl font-bold pt-14 pb-5">Digital Marketing</h4>
+                        <p class=" font-normal text-2xl text-gray-300">Strategic marketing campaigns that boost your online presence and drive conversions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+         
+        <!-- About Section -->  
+        <section id="about" class="bg-darkblue h-160 w-full flex justify-center items-center">
+            <div class="container mx-auto max-w-360 grid md:grid-cols-2 gap-15 items-center">
+                <div>
+                    <img class="aspect-video object-cover h-107 rounded-2xl" src="./assets/about-image.png" alt="image of nexus staff working in the office">
+                </div>
+                <div>
+                    <div>
+                        <h2 class="text-white text-5xl font-bold pb-10"> About Nexus</h2>
+                        <p class="text-gray-300 text-[1.6rem]">We are a forward-thinking technology company dedicated to helping businesses navigate the digital transformation journey. With years of exprience and a passion for innovation, we deliver solutions that matter.</p>
+                    </div>
+                    <div class="grid grid-cols-2 pt-8">
+                        <div>
+                            <h2 class="text-lightblue text-[2.8rem] font-bold ">150+</h2>
+                            <p class="text-gray-300 text-[1.4rem] pt-1">Projects Completed</p>
+                        </div>
+                        <div class="pl-6">
+                            <h2 class="text-green text-[2.8rem] font-bold">98%</h2>
+                            <p class="text-gray-300 text-[1.4rem] pt-1">Client Satisfaction</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact section -->
+
+        <section id="contact" class="bg-blueshade h-[110vh] w-full flex justify-cente items-center">
+            <div class="container mx-auto max-w-360 flex flex-col items-center ">
+                <h2 class="text-white text-5xl font-bold pb-8">Get In Touch</h2>
+                <p class="text-gray-300 text-[1.8rem] pb-8">Ready to start your project? Let's discuss how we can help you achieve your goals.</p>
+                <div class="bg-gray-800 border-gray-700 border rounded-2xl grid md:grid-cols-2 max-w-280 p-9">
+                    <div class="">
+                        <p class="flex gap-3 text-white text-2xl"><i class="fas fa-envelope"></i> hello@nexus.com</p>
+                        <p><i class="fas fa-telephone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-pin"></i> 123 Business Ave, Tech City</p>
+                    </div>
+                    <form action="">
+                        <input type="text" name="fullname" id="fullname" placeholder="Your name" required>
+                        <input type="text" name="email" id="email" placeholder="Your Email" required>
+                        <textarea id="message" placeholder="Your Messsage"></textarea>
+                        <button type="submit">Send Messsage</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <img src="./assets/logo.png" alt="Nexus Logo">
+            <!-- <h1>N</h1> -->
+            <h1>Nexus</h1>
+        </div>
+        <div>
+            <p><small>&copy; 2026 Nexus. All rights reserved</small></p>
+        </div>
+        <div>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-github"></i>
+        </div>
+    </footer>
+</body>
+</html>
