@@ -21,10 +21,10 @@
 <body>
     <!-- <header> -->
         <nav class="sticky w-full top-0 z-100 p-6 bg-darkblue border-b-2 border-lightblue/30">
-            <div class="container mx-auto max-w-360 flex items-center justify-between">
+            <div class="container mx-auto max-w-360 flex items-center justify-between align-middle">
                 <div>
-                    <a class="flex items-center gap-x-4" href="#"><img class="size-10 shrink-0 rounded-2xl" src="./assets/logo.png" alt="Nexus Logo">
-                    <h1 class="font-bold text-2xl text-white">NEXUS</h1></a>
+                    <a class="flex items-center gap-1 md:gap-4" href="#"><img class="size-8 rounded-xl shrink md:size-10 md:rounded-2xl" src="./assets/logo.png" alt="Nexus Logo">
+                    <h1 class="font-bold text-xl md:text-2xl text-white">NEXUS</h1></a>
                 </div>
 
                 <!-- Desktop nav -->
@@ -43,22 +43,22 @@
                             href="#contact">Contact</a></li>
                     </ul>
                 </div>
-                <div class="flex gap-4">
+                <div class="flex gap-4 items-center">
                     <div>
-                        <button id="get-started" class="bg-lightblue text-xl text-white h-12 w-50 rounded-lg hover:text-sky-500 hover:font-bold hover:bg-white hover:border-transparent active:bg-purple active:text-white"><a href="#">Get Started</a></button>
+                        <button id="get-started" class=" bg-lightblue text-white text-[1rem] rounded-sm w-20 md:text-xl md:h-12 md:w-50 md:rounded-lg hover:text-sky-500 hover:font-bold hover:bg-white hover:border-transparent active:bg-purple active:text-white"><a href="#">Get Started</a></button>
                     </div>
 
                     <!-- Hamburger menu shown only on mobile  -->
                     <div>
-                        <i class="fas fa-bars text-white md:hidden"></i>
+                        <i class="fas fa-bars text-white hidden text-3xl "></i>
                     </div>
 
                     <!-- Mobile Navlinks -->
-                    <div id="mobile-menu" class=" p-4 hidden md:hidden">
+                    <div id="mobile-menu" class=" p-4 hidden">
                         <ul class="flex flex-col space-y-3 ">
                             <li><a 
                                 class="hover:border-b-4 hover:border-lightblue hover:text-white" 
-                                href="#home">mHome</a></li>
+                                href="#home">Home</a></li>
                             <li><a 
                                 class="hover:border-b-4 hover:border-lightblue hover:text-white" href="#services">Services</a></li>
                             <li><a 
@@ -150,8 +150,8 @@
 
         <!-- Contact section -->
 
-        <section id="contact" class="bg-blueshade h-[110vh] w-full flex justify-cente items-center">
-            <div class="container mx-auto max-w-360 flex flex-col items-center ">
+        <section id="contact" class="bg-blueshade h-[110vh] w-full flex justify-center items-center">
+            <div class="container mx-auto max-w-360 flex flex-col items-center">
                 <h2 class="text-white text-5xl font-bold pb-8">Get In Touch</h2>
                 <p class="text-gray-300 text-[1.8rem] pb-16">Ready to start your project? Let's discuss how we can help you achieve your goals.</p>
                 <div class="bg-gray-800  border-gray-700 border rounded-2xl grid md:grid-cols-2 gap-4 mx-auto w-full max-w-280 p-9">
@@ -170,17 +170,17 @@
             </div>
         </section>
     </main>
-    <footer>
-        <div class="bg-gray-800 py-10 flex items-center mx-auto max-w-360: justify-between">
-            <div class="flex gap-4 items-center">
-                <img class="size-10 rounded-2xl shrink" src="./assets/logo.png" alt="Nexus Logo">
+    <footer class="bg-gray-800 py-6 flex items-center  w-full">
+        <div class="container max-w-360 mx-auto flex justify-between items-center ">
+            <div class="flex gap-1 md:gap-4 items-center">
+                <img class="size-8 md:size-10 rounded-2xl shrink" src="./assets/logo.png" alt="Nexus Logo">
                 <!-- <h1>N</h1> -->
-                <h1 class="text-white font-extrabold ">Nexus</h1>
+                <h1 class="text-white md:text-3xl font-bold ">Nexus</h1>
             </div>
             <div>
-                <p class="text-gray-300"><small>&copy; 2026 Nexus. All rights reserved</small></p>
+                <p class="text-gray-400 md:text-3xl flex text-center"><small>&copy; 2026 Nexus. All rights reserved</small></p>
             </div>
-            <div class="flex items-center gap-4 text-gray-300">
+            <div class="flex items-center gap-1 md:gap-4 text-gray-300">
                 <i class="fab fa-twitter"></i>
                 <i class="fab fa-linkedin"></i>
                 <i class="fab fa-github"></i>
