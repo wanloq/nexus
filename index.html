@@ -19,8 +19,8 @@
     <title>Nexus - Build your digital future</title>
 </head>
 <body>
-    <header>
-        <nav class="sticky w-full top-0 z-100 p-6 shadow-md bg-darkblue border-b-2 border-lightblue/30">
+    <!-- <header> -->
+        <nav class="sticky w-full top-0 z-100 p-6 bg-darkblue border-b-2 border-lightblue/30">
             <div class="container mx-auto max-w-360 flex items-center justify-between">
                 <div>
                     <a class="flex items-center gap-x-4" href="#"><img class="size-10 shrink-0 rounded-2xl" src="./assets/logo.png" alt="Nexus Logo">
@@ -72,7 +72,7 @@
                 </div>
             </div>
         </nav>
-    </header>
+    <!-- </header> -->
     <main>
 
         <!-- Hero section -->
@@ -153,36 +153,38 @@
         <section id="contact" class="bg-blueshade h-[110vh] w-full flex justify-cente items-center">
             <div class="container mx-auto max-w-360 flex flex-col items-center ">
                 <h2 class="text-white text-5xl font-bold pb-8">Get In Touch</h2>
-                <p class="text-gray-300 text-[1.8rem] pb-8">Ready to start your project? Let's discuss how we can help you achieve your goals.</p>
-                <div class="bg-gray-800 border-gray-700 border rounded-2xl grid md:grid-cols-2 max-w-280 p-9">
+                <p class="text-gray-300 text-[1.8rem] pb-16">Ready to start your project? Let's discuss how we can help you achieve your goals.</p>
+                <div class="bg-gray-800  border-gray-700 border rounded-2xl grid md:grid-cols-2 gap-4 mx-auto w-full max-w-280 p-9">
                     <div class="">
-                        <p class="flex gap-3 text-white text-2xl"><i class="fas fa-envelope"></i> hello@nexus.com</p>
-                        <p><i class="fas fa-telephone"></i> +1 (555) 123-4567</p>
-                        <p><i class="fas fa-pin"></i> 123 Business Ave, Tech City</p>
+                        <p class="flex gap-3 text-2xl text-white"><i class="fas fa-envelope"></i> hello@nexus.com</p>
+                        <p class="flex gap-3 pt-4 text-2xl text-white"><i class="fas fa-telephone"></i> +1 (555) 123-4567</p>
+                        <p class="flex gap-3 pt-4 text-2xl text-white"><i class=" fas fa-pin"></i> 123 Business Ave, Tech City</p>
                     </div>
-                    <form action="">
-                        <input type="text" name="fullname" id="fullname" placeholder="Your name" required>
-                        <input type="text" name="email" id="email" placeholder="Your Email" required>
-                        <textarea id="message" placeholder="Your Messsage"></textarea>
-                        <button type="submit">Send Messsage</button>
+                    <form action="" class="grid grid-cols-1 gap-5 text-white text-2xl md:max-w-130">
+                        <input class="bg-gray-600 pl-6 rounded-xl h-17" type="text" name="fullname" id="fullname" placeholder="Your name" required>
+                        <input class="bg-gray-600 pl-6 rounded-xl h-17" type="text" name="email" id="email" placeholder="Your Email" required>
+                        <textarea class="bg-gray-600 pl-6 rounded-xl h-40" id="message" placeholder="Your Messsage"></textarea>
+                        <button class="bg-lightblue mt-3 h-16 rounded-xl font-bold" type="submit">Send Messsage</button>
                     </form>
                 </div>
             </div>
         </section>
     </main>
     <footer>
-        <div>
-            <img src="./assets/logo.png" alt="Nexus Logo">
-            <!-- <h1>N</h1> -->
-            <h1>Nexus</h1>
-        </div>
-        <div>
-            <p><small>&copy; 2026 Nexus. All rights reserved</small></p>
-        </div>
-        <div>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-linkedin"></i>
-            <i class="fab fa-github"></i>
+        <div class="bg-gray-800 py-10 flex items-center mx-auto max-w-360: justify-between">
+            <div class="flex gap-4 items-center">
+                <img class="size-10 rounded-2xl shrink" src="./assets/logo.png" alt="Nexus Logo">
+                <!-- <h1>N</h1> -->
+                <h1 class="text-white font-extrabold ">Nexus</h1>
+            </div>
+            <div>
+                <p class="text-gray-300"><small>&copy; 2026 Nexus. All rights reserved</small></p>
+            </div>
+            <div class="flex items-center gap-4 text-gray-300">
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-github"></i>
+            </div>
         </div>
     </footer>
 </body>
