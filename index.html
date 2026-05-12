@@ -20,66 +20,65 @@
 </head>
 <body>
     <!-- <header> -->
-        <nav class="sticky w-full top-0 z-100 p-6 bg-darkblue border-b-2 border-lightblue/30">
-            <div class="container mx-auto max-w-360 flex items-center justify-between align-middle">
-                <div>
-                    <a class="flex items-center gap-1 md:gap-4" href="#"><img class="size-8 rounded-xl shrink md:size-10 md:rounded-2xl" src="./assets/logo.png" alt="Nexus Logo">
-                    <h1 class="font-bold text-xl md:text-2xl text-white">NEXUS</h1></a>
-                </div>
-
-                <!-- Desktop nav -->
-                <div id="menu" class="text-gray-300 text-xl font-semibold ">
-                    <ul class="hidden md:flex justify-center space-x-12">
-                        <li><a 
-                            class="hover:border-b-4 hover:border-lightblue hover:text-white " 
-                            href="#home">Home</a></li>
-                        <li><a 
-                            class="hover:border-b-4 hover:border-lightblue hover:text-white" href="#services">Services</a></li>
-                        <li><a 
-                            class="hover:border-b-4 hover:border-lightblue hover:text-white"
-                            href="#about">About</a></li>
-                        <li><a 
-                            class="hover:border-b-4 hover:border-lightblue hover:text-white"
-                            href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="flex gap-4 items-center">
-                    <div>
-                        <button id="get-started" class=" bg-lightblue text-white text-[1rem] rounded-sm w-20 md:text-xl md:h-12 md:w-50 md:rounded-lg hover:text-sky-500 hover:font-bold hover:bg-white hover:border-transparent active:bg-purple active:text-white"><a href="#">Get Started</a></button>
-                    </div>
-
-                    <!-- Hamburger menu shown only on mobile  -->
-                    <div>
-                        <i class="fas fa-bars text-white hidden text-3xl "></i>
-                    </div>
-
-                    <!-- Mobile Navlinks -->
-                    <div id="mobile-menu" class=" p-4 hidden">
-                        <ul class="flex flex-col space-y-3 ">
-                            <li><a 
-                                class="hover:border-b-4 hover:border-lightblue hover:text-white" 
-                                href="#home">Home</a></li>
-                            <li><a 
-                                class="hover:border-b-4 hover:border-lightblue hover:text-white" href="#services">Services</a></li>
-                            <li><a 
-                                class="hover:border-b-4 hover:border-lightblue hover:text-white"
-                                href="#about">About</a></li>
-                            <li><a 
-                                class="hover:border-b-4 hover:border-lightblue hover:text-white"
-                                href="#contact">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
+    <nav class="sticky w-full top-0 z-100 p-6 bg-darkblue border-b-2 border-lightblue/30">
+        <div class="container mx-auto max-w-360 flex items-center justify-between align-middle">
+            <div>
+                <a class="flex items-center gap-1 md:gap-4" href="#"><img class="size-8 rounded-xl shrink md:size-10 md:rounded-2xl" src="./assets/logo.png" alt="Nexus Logo">
+                <h1 class="font-bold text-xl md:text-2xl text-white">NEXUS</h1></a>
             </div>
-        </nav>
+
+            <!-- Desktop nav -->
+            <div id="menu" class="text-gray-300 text-xl font-semibold ">
+                <ul class="hidden md:flex justify-center space-x-12">
+                    <li><a 
+                        class="hover:border-b-4 hover:border-lightblue hover:text-white " 
+                        href="#home">Home</a></li>
+                    <li><a 
+                        class="hover:border-b-4 hover:border-lightblue hover:text-white" href="#services">Services</a></li>
+                    <li><a 
+                        class="hover:border-b-4 hover:border-lightblue hover:text-white"
+                        href="#about">About</a></li>
+                    <li><a 
+                        class="hover:border-b-4 hover:border-lightblue hover:text-white"
+                        href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="flex gap-4 items-center">
+                <div>
+                    <button id="get-started" class=" bg-lightblue text-white text-[1rem] rounded-sm min-w-22 md:text-xl md:h-12 md:w-50 md:rounded-lg md:hover:text-sky-500 md:hover:font-bold md:hover:bg-white  active:bg-purple active:text-white"><a href="#">Get Started</a></button>
+                </div>
+
+                <!-- Hamburger menu shown only on mobile  -->
+                <div class="md:hidden">
+                    <i class="fas fa-bars text-white text-3xl"></i>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+    <!-- Mobile Navlinks -->
+    <div id="mobile-menu" class="hidden text-2xl text-gray-300 text-center absolute w-full border-b-2 border-lightblue/50">
+        <ul class="flex flex-col gap-3 bg-blueshade h-50">
+            <li><a 
+                class="hover:border-b-4 hover:border-lightblue hover:text-white" 
+                href="#home">Home</a></li>
+            <li><a 
+                class="hover:border-b-4 hover:border-lightblue hover:text-white" href="#services">Services</a></li>
+            <li><a 
+                class="hover:border-b-4 hover:border-lightblue hover:text-white"
+                href="#about">About</a></li>
+            <li><a 
+                class="hover:border-b-4 hover:border-lightblue hover:text-white"
+                href="#contact">Contact</a></li>
+        </ul>
+    </div>
     <!-- </header> -->
     <main>
-
         <!-- Hero section -->
         <section id="home" class="bg-darkblue h-screen w-full flex justify-center items-center">
-            <div class="container mx-auto max-w-360 grid grid-cols-1 md:grid-cols-2 gap-15">
-                <div class="flex flex-col justify-center align-middle space-y-12  ">
-                    <div class="font-bold text-white text-7xl flex">
+            <div class="container mx-auto md:max-w-360 grid grid-cols-1 md:grid-cols-2 m:gap-15">
+                <div class="flex flex-col justify-center align-middle m:gap-12">
+                    <div class="flex py-10 text-2xl text-white font-bold md:text-white md:text-7xl">
                         <h1>Build Your <span class="text-lightblue">Digital</span> Future</h1>
                     </div> 
                     <div class="text-gray-300 font-normal text-[35px]">
