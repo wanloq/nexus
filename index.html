@@ -11,10 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- css Link-->
-    <link
-      href="./css/output.css"
-      rel="stylesheet"
-    />
+    <link href="./css/output.css" rel="stylesheet"/>
 
     <!-- Font Awesome Link-->
     <link 
@@ -26,16 +23,16 @@
 <!-- body section -->
 <body>
     <!-- <header> -->
-    <nav class="sticky w-full top-0 z-100 p-6 bg-darkblue border-b-2 border-lightblue/30">
-        <div class="container mx-auto max-w-360 flex items-center justify-between align-middle">
+    <nav class="sticky w-full top-0 z-100 p-4 bg-darkblue border-b-2 border-lightblue/30">
+        <div class="container mx-auto flex items-center justify-between align-middle md:max-w-[95%] lg:max-w-[86%]">
             <div>
-                <a class="flex items-center gap-1 sm:gap-4" href="#"><img class="size-8 rounded-xl shrink sm:size-10 sm:rounded-2xl" src="./assets/logo.png" alt="Nexus Logo">
-                <h1 class="font-bold text-xl sm:text-2xl text-white">NEXUS</h1></a>
+                <a class="flex items-center gap-1 lg:gap-4" href="#"><img class="size-8 rounded-xl shrink lg:size-10 lg:rounded-2xl" src="./assets/logo.png" alt="Nexus Logo">
+                <h1 class="font-bold text-xl lg:text-2xl text-white">NEXUS</h1></a>
             </div>
 
             <!-- Desktop nav -->
             <div id="menu" class="text-gray-300 text-xl font-semibold ">
-                <ul class="hidden sm:flex justify-center space-x-12">
+                <ul class="hidden justify-center md:space-x-5 lg:space-x-12 md:flex  lg:flex">
                     <li><a 
                         class="hover:border-b-4 hover:border-lightblue hover:text-white " 
                         href="#home">Home</a></li>
@@ -51,11 +48,11 @@
             </div>
             <div class="flex gap-4 items-center">
                 <div>
-                    <button id="get-started" class=" bg-lightblue text-white text-[1rem] rounded-sm min-w-22 sm:text-xl sm:h-12 sm:w-50 sm:rounded-lg sm:hover:text-sky-500 sm:hover:font-bold sm:hover:bg-white  active:bg-purple active:text-white"><a href="#">Get Started</a></button>
+                    <button id="get-started" class=" bg-lightblue text-white text-[1rem] rounded-sm min-w-22 md:text-xl lg:h-12 lg:w-50 md:rounded-lg md:h-8 md:w-30 hover:text-sky-500 hover:font-bold hover:bg-white  active:bg-purple active:text-white"><a href="#">Get Started</a></button>
                 </div>
 
                 <!-- Hamburger menu shown only on mobile  -->
-                <div class="sm:hidden">
+                <div class="md:hidden">
                     <i class="fas fa-bars text-white text-3xl"></i>
                 </div>
 
@@ -64,7 +61,7 @@
     </nav>
 
     <!-- Mobile Nav / Hamburger menu -->
-    <nav id="mobile-menu" class="hidden sticky text-2xl text-gray-300 text-center w-full border-b-2 border-lightblue/50 sm:hidden">
+    <nav id="mobile-menu" class="hidden sticky text-2xl text-gray-300 text-center w-full border-b-2 border-lightblue/50 md:hidden">
 
         <!-- mobile menu navlinks -->
         <ul class="flex flex-col gap-3 bg-blueshade h-46">
@@ -87,90 +84,90 @@
     <main>
 
         <!-- Hero section -->
-        <section id="home" class="bg-darkblue w-full flex justify-center items-center sm:h-screen">
-            <div class="container mx-auto px-4 py-10 grid grid-cols-1 gap-15 sm:max-w-360 sm:grid-cols-2 sm:px-0">
+        <section id="home" class="bg-darkblue w-full flex justify-center items-center lg:h-screen">
+            <div class="container mx-auto px-4 py-10 grid grid-cols-1 gap-15 md:gap-10 md:max-w-[95%] lg:max-w-[86%] md:grid-cols-2 lg:px-0">
 
                 <!-- hero text and action buttons -->
-                <div class="flex flex-col gap-10 text-center justify-center align-middle sm:p-0 sm:gap-12 sm:text-start">
-                    <div class="flex text-5xl text-center text-white font-bold sm:text-left sm:text-[5rem]">
+                <div class="flex flex-col gap-10 text-center justify-center align-middle lg:p-0 lg:gap-12 lg:text-start">
+                    <div class="flex text-5xl text-center text-white font-bold md:text-left lg:text-[5rem]">
                         <h1 class="">Build Your <span class="text-lightblue">Digital</span> Future</h1>
                     </div> 
-                    <div class="text-gray-300 font-normal text-xl sm:text-[35px]">
+                    <div class="text-gray-300 font-normal text-xl md:text-left lg:text-[35px]">
                         <p>Transform your business with cutting-edge solutions that drive growth and innovation in the digital landscape</p>
                     </div>
-                    <div class="flex gap-6 h-12 sm:h-20 font-semibold sm:text-2xl">
-                        <button class="text-white rounded-md bg-lightblue sm:rounded-lg w-70 sm:hover:text-sky-500 sm:hover:font-bold sm:hover:bg-white  active:bg-purple active:text-white"><a href="#">Start Your Journey</a></button>
-                        <button class="text-white rounded-md sm:rounded-lg border border-gray-500 w-50 sm:hover:text-sky-500 sm:hover:font-bold sm:hover:bg-white  active:bg-purple active:text-white"><a href="#">Learn More</a></button>
+                    <div class="flex gap-6 h-12 lg:h-20 font-semibold lg:text-2xl">
+                        <button class="text-white rounded-md bg-lightblue lg:rounded-lg w-70 lg:hover:text-sky-500 lg:hover:font-bold lg:hover:bg-white  active:bg-purple active:text-white"><a href="#">Start Your Journey</a></button>
+                        <button class="text-white rounded-md lg:rounded-lg border border-gray-500 w-50 lg:hover:text-sky-500 lg:hover:font-bold lg:hover:bg-white  active:bg-purple active:text-white"><a href="#">Learn More</a></button>
                     </div>
                 </div>
 
                 <!-- hero image -->
                 <div>
-                    <img class="aspect-3/2 object-cover sm:h-130 rounded-2xl" src="./assets/hero-image.png" alt="hero-image showing a laptop">
+                    <img class="aspect-3/2 object-cover lg:h-130 rounded-2xl" src="./assets/hero-image.png" alt="hero-image showing a laptop">
                 </div>
             </div>
         </section>
 
         <!-- Services section -->
-        <section id="services" class="bg-blueshade sm:h-screen w-full">
-            <div class="container px-4 py-25 mx-auto sm:max-w-360 sm:px-0">
+        <section id="services" class="bg-blueshade lg:h-screen w-full">
+            <div class="container px-4 py-25 mx-auto md:max-w-[95%] lg:max-w-[86%] lg:px-0">
                 <div class="flex flex-col items-center">
-                    <h2 class="text-4xl text-center font-bold sm:text-5xl text-white">Our Services</h2>
-                    <p class="pt-4 text-xl sm:text-[1.7rem] text-gray-300 sm:max-w-210 sm:pt-9 text-center">We provide comprehensive solutions to help your business thrive in the digital age</p>
+                    <h2 class="text-4xl text-center font-bold lg:text-5xl text-white">Our Services</h2>
+                    <p class="pt-4 text-xl lg:text-[1.7rem] text-gray-300 lg:max-w-210 lg:pt-9 text-center">We provide comprehensive solutions to help your business thrive in the digital age</p>
                 </div>
 
                 <!-- our services cards grid wrapper-->
-                <div class="grid grid-cols-1 gap-10 pt-21 sm:grid-cols-3 place-content-center">
+                <div class="grid grid-cols-1 gap-10 pt-21 sm:grid-cols-3 lg:grid-cols-3 place-content-center">
 
                     <!-- web development card -->
-                    <div class="bg-gray-800 p-4 flex flex-col items-center sm:items-start sm:p-10 sm:pt-11 border border-gray-700 rounded-2xl hover:scale-105 hover:shadow hover:shadow-lightblue">
+                    <div class="bg-gray-800 p-4 flex flex-col items-center lg:items-start lg:p-10 lg:pt-11 border border-gray-700 rounded-2xl hover:scale-105 hover:shadow hover:shadow-lightblue transition-all ease-in-out">
                         <div class="bg-lightblue text-white text-2xl rounded-xl text-center content-center size-16"><i class="fas fa-code"></i></div>
                         <h4 class="text-white text-2xl text-center font-bold pt-8 pb-5">Web Development</h4>
-                        <p class="font-normal text-gray-300 text-xl text-center sm:text-2xl sm:text-left">Custom website and web applications built with modern technologies for optimal performance.</p>
+                        <p class="font-normal text-gray-300 text-xl text-center lg:text-2xl md:text-left">Custom website and web applications built with modern technologies for optimal performance.</p>
                     </div>
 
                     <!-- mobile apps card -->
-                    <div class="bg-gray-800 p-4 flex flex-col items-center sm:items-start sm:p-10 sm:pt-11 border border-gray-700 rounded-2xl hover:scale-105 hover:shadow hover:shadow-lightblue">
+                    <div class="bg-gray-800 p-4 flex flex-col items-center lg:items-start lg:p-10 lg:pt-11 border border-gray-700 rounded-2xl hover:scale-105 hover:shadow hover:shadow-lightblue transition-all ease-in-out">
                         <div class="bg-green text-white text-2xl rounded-xl text-center content-center size-16"><i class="fas fa-mobile-screen"></i></div>
                         <h4 class="text-white text-2xl text-center font-bold pt-8 pb-5">Mobile Apps</h4>
-                        <p class="font-normal text-gray-300 text-xl text-center sm:text-2xl sm:text-left">Native and cross-platform mobile applications that deliver exceptional user experiences.</p>
+                        <p class="font-normal text-gray-300 text-xl text-center lg:text-2xl md:text-left">Native and cross-platform mobile applications that deliver exceptional user experiences.</p>
                     </div>
 
                     <!-- digital marketing card -->
-                    <div class="bg-gray-800 p-4 flex flex-col items-center sm:items-start sm:p-10 sm:pt-11 border border-gray-700 rounded-2xl hover:scale-105 hover:shadow hover:shadow-lightblue">
+                    <div class="bg-gray-800 p-4 flex flex-col items-center lg:items-start lg:p-10 lg:pt-11 border border-gray-700 rounded-2xl hover:scale-105 hover:shadow hover:shadow-lightblue transition-all ease-in-out">
                         <div class="bg-purple text-white text-2xl rounded-xl text-center content-center size-16"><i class="fas fa-chart-line"></i></div>
                         <h4 class="text-white text-2xl text-center font-bold pt-8 pb-5">Digital Marketing</h4>
-                        <p class="font-normal text-gray-300 text-xl text-center sm:text-2xl sm:text-left">Strategic marketing campaigns that boost your online presence and drive conversions.</p>
+                        <p class="font-normal text-gray-300 text-xl text-center lg:text-2xl md:text-left">Strategic marketing campaigns that boost your online presence and drive conversions.</p>
                     </div>
                 </div>
             </div>
         </section>
          
         <!-- About Section -->  
-        <section id="about" class="bg-darkblue w-full flex justify-center items-center sm:h-160">
+        <section id="about" class="bg-darkblue w-full flex justify-center items-center md:h-160">
 
             <!-- about section main grid container -->
-            <div class="container mx-auto px-4 py-14 grid gap-15 items-center sm:max-w-360 sm:px-0 sm:py-0 sm:grid-cols-2">
+            <div class="container mx-auto px-4 py-14 grid gap-15 items-center md:max-w-[95%] lg:max-w-[86%] lg:px-0 lg:py-0 md:grid-cols-2">
                 <div>
-                    <img class="aspect-video object-cover rounded-2xl sm:h-107" src="./assets/about-image.png" alt="image of nexus staff working in the office">
+                    <img class="aspect-video object-cover rounded-2xl md:h-107" src="./assets/about-image.png" alt="image of nexus staff working in the office">
                 </div>
                 <div>
                     
                     <!-- about nexus text -->
                     <div>
-                        <h2 class="text-white text-4xl text-center font-bold pb-10 sm:text-left sm:text-5xl"> About Nexus</h2>
-                        <p class="text-gray-300 text-xl text-center sm:text-left sm:text-[1.6rem]">We are a forward-thinking technology company dedicated to helping businesses navigate the digital transformation journey. With years of exprience and a passion for innovation, we deliver solutions that matter.</p>
+                        <h2 class="text-white text-4xl text-center font-bold pb-10 lg:text-left lg:text-5xl"> About Nexus</h2>
+                        <p class="text-gray-300 text-xl text-center md:text-left lg:text-[1.6rem]">We are a forward-thinking technology company dedicated to helping businesses navigate the digital transformation journey. With years of exprience and a passion for innovation, we deliver solutions that matter.</p>
                     </div>
 
                     <!-- grid wrapper for projects and happy clients counter -->
                     <div class="grid grid-cols-2 pt-8">
                         <div>
-                            <h2 class="text-lightblue text-center text-[2.8rem] font-bold sm:text-left">150+</h2>
-                            <p class="text-gray-300 text-center sm:text-[1.4rem] sm:text-left pt-1">Projects Completed</p>
+                            <h2 class="text-lightblue text-center text-[2.8rem] font-bold lg:text-left">150+</h2>
+                            <p class="text-gray-300 text-center lg:text-[1.4rem] lg:text-left pt-1">Projects Completed</p>
                         </div>
                         <div class="pl-6">
-                            <h2 class="text-green text-center text-[2.8rem] font-bold sm:text-left">98%</h2>
-                            <p class="text-gray-300 text-center sm:text-[1.4rem] sm:text-left pt-1">Client Satisfaction</p>
+                            <h2 class="text-green text-center text-[2.8rem] font-bold lg:text-left">98%</h2>
+                            <p class="text-gray-300 text-center lg:text-[1.4rem] lg:text-left pt-1">Client Satisfaction</p>
                         </div>
                     </div>
                 </div>
@@ -178,27 +175,27 @@
         </section>
 
         <!-- Contact section -->
-        <section id="contact" class="bg-blueshade w-full flex justify-center items-center sm:h-[110vh]">
-            <div class="container py-10 px-4 mx-auto flex flex-col items-center sm:px-0 sm:max-w-360">
-                <h2 class="text-white text-4xl font-bold pb-8 sm:text-5xl">Get In Touch</h2>
-                <p class="text-gray-300 text-xl text-center pb-16 sm:text-[1.8rem]">Ready to start your project? Let's discuss how we can help you achieve your goals.</p>
+        <section id="contact" class="bg-blueshade w-full flex justify-center items-center lg:h-[110vh]">
+            <div class="container py-10 px-4 mx-auto flex flex-col items-center lg:px-0 md:max-w-[95%] lg:max-w-[86%]">
+                <h2 class="text-white text-4xl font-bold pb-8 lg:text-5xl">Get In Touch</h2>
+                <p class="text-gray-300 text-xl text-center pb-16 lg:text-[1.8rem]">Ready to start your project? Let's discuss how we can help you achieve your goals.</p>
 
                 <!-- grid wrapper for contact details and contact form -->
-                <div class="bg-gray-800/60  border-gray-700 border rounded-2xl grid gap-10 sm:grid-cols-2 sm:gap-4 mx-auto w-full max-w-280 p-9">
+                <div class="bg-gray-800/60  border-gray-700 border rounded-2xl grid gap-10 md:grid-cols-2 lg:gap-4 mx-auto w-full max-w-280 p-9">
 
-                    <!-- wrapper for contact detail -->
+                    <!-- wrapper for contact details -->
                     <div>
-                        <p class="flex gap-3 text-white text-xl sm:text-2xl"><i class="fas fa-envelope text-lightblue"></i>hello@nexus.com</p>
-                        <p class="flex gap-3 pt-4 text-white text-xl sm:text-2xl"><i class="fas fa-mobile-screen text-lightblue"></i>+1 (555) 123-4567</p>
-                        <p class="flex gap-3 pt-4 text-white text-xl sm:text-2xl"><i class=" fas fa-chart-line text-lightblue"></i>123 Business Ave, Tech City</p>
+                        <p class="flex gap-5 text-white text-xl lg:text-2xl"><i class="fas fa-envelope text-lightblue"></i>hello@nexus.com</p>
+                        <p class="flex gap-5 pt-4 text-white max-lg:text-xl lg:text-2xl"><i class="fas fa-mobile-screen text-lightblue"></i>+1 (555) 123-4567</p>
+                        <p class="flex gap-5 pt-4 text-white text-xl  lg:text-2xl"><i class=" fas fa-chart-line text-lightblue"></i>123 Business Ave, Tech City</p>
                     </div>
 
                     <!-- contact form -->
-                    <form action="" class="grid grid-cols-1 gap-5 text-white text-xl sm:text-2xl sm:max-w-130">
+                    <form action="" class="grid grid-cols-1 gap-5 text-white text-xl lg:text-2xl lg:max-w-130">
                         <input class="bg-gray-700/90 border border-gray-600 pl-6 rounded-xl h-17" type="text" name="fullname" id="fullname" placeholder="Your name" required>
                         <input class="bg-gray-700/90 border border-gray-600 pl-6 rounded-xl h-17" type="text" name="email" id="email" placeholder="Your Email" required>
                         <textarea class="bg-gray-700/90 border border-gray-600 pl-6 rounded-xl h-40" id="message" placeholder="Your Messsage"></textarea>
-                        <button class="bg-lightblue mt-3 h-16 rounded-xl font-bold sm:hover:text-sky-500 sm:hover:font-bold sm:hover:bg-white  active:bg-purple active:text-white" type="submit">Send Messsage</button>
+                        <button class="bg-lightblue mt-3 h-16 rounded-xl font-bold lg:hover:text-sky-500 lg:hover:font-bold lg:hover:bg-white  active:bg-purple active:text-white" type="submit">Send Messsage</button>
                     </form>
                 </div>
             </div>
@@ -210,18 +207,18 @@
         <div class="container max-w-360 mx-auto flex justify-between items-center">
 
             <!-- logo -->
-            <div class="flex gap-1 sm:gap-4 items-center">
-                <img class="size-8 sm:size-10 rounded-2xl shrink" src="./assets/logo.png" alt="Nexus Logo">
-                <h1 class="text-white sm:text-3xl font-bold ">Nexus</h1>
+            <div class="flex gap-1 lg:gap-4 items-center">
+                <img class="size-8 lg:size-10 rounded-2xl shrink" src="./assets/logo.png" alt="Nexus Logo">
+                <h1 class="text-white lg:text-3xl font-bold ">Nexus</h1>
             </div>
 
             <!-- copyright info -->
             <div>
-                <p class="text-gray-400 sm:text-3xl flex text-center"><small>&copy; 2026 Nexus. All rights reserved</small></p>
+                <p class="text-gray-400 lg:text-3xl flex text-center"><small>&copy; 2026 Nexus. All rights reserved</small></p>
             </div>
 
             <!-- social icons -->
-            <div class="flex items-center gap-1 text-gray-300 sm:text-3xl sm:gap-4">
+            <div class="flex items-center gap-1 text-gray-300 lg:text-3xl lg:gap-4">
                 <i class="fab fa-twitter"></i>
                 <i class="fab fa-linkedin"></i>
                 <i class="fab fa-github"></i>
